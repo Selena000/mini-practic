@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/top/top",
+    "pages/me/me",
+    "components/searchbar/searchbar",
+    "components/mysearchbar/mysearchbar"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/img/index.png",
+        "selectedIconPath": "images/img/index-active.png"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "text": "榜单",
+        "iconPath": "images/img/top.png",
+        "selectedIconPath": "images/img/top-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/img/me.png",
+        "selectedIconPath": "images/img/me-active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#feffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00c759",
+    "navigationBarTitleText": "微信小程序开发案例",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,10 @@
+/* miniprogram/components/searchbar/searchbar.wxss */
+.weui-search-bar {
+  background-color: transparent;
+}
+.weui-search-bar__label span {
+  font-size: 12px;
+}
+.weui-search-bar__label {
+  /* height: 2em; */
+}

@@ -1,0 +1,21 @@
+/* miniprogram/components/mysearchbar/mysearchbar.wxss */
+.search-wrap {
+  padding: 8px;
+  background-color: #00c759;
+}
+.search-bar {
+  background-color: white;
+  font-size: 11px;
+  color: #b2b2b2;
+  padding: 6px 0;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: text-top;
+}
+.weui-icon-search {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: -1px;
+  background-color: #b2b2b2;
+}

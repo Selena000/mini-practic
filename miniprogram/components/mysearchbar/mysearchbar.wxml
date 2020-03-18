@@ -1,0 +1,6 @@
+<view class="search-wrap">
+  <view class="search-bar" bindtap="{{handleClick}}">
+    <i class="weui-icon-search"></i>
+    <text>搜索</text>
+  </view>
+</view>
