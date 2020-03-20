@@ -1,3 +1,9 @@
 <view class="index">
   <searchbar></searchbar>
+  <view wx:for="{{viewData}}" wx:key="title">
+    <module-view
+      title="{{item.title}}" 
+      list="{{item.list}}">
+    </module-view>
+  </view>
 </view>

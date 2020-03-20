@@ -1,0 +1,41 @@
+/* miniprogram/pages/detailIndex/detailIndex.wxss */
+page {
+  background: #feffff;
+}
+.list {
+  padding: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.view-item {
+  flex: 1;
+  /* width: 30%; */
+  margin: 24rpx;
+  height: auto;
+  text-align: center;
+}
+.img image {
+  width: 160rpx;
+  height: 210rpx;
+  border-radius: 8rpx;
+}
+.detail {
+  font-size: 20rpx;
+  text-align: center;
+  width: 160rpx;
+}
+.detail-title {
+  font-size: 24rpx;
+  font-weight: blod;
+  color: #191919;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.score-wrapper {
+  color: #ffaa00;
+}
+.score {
+  margin-left: 6rpx;
+  color: #8d8d8d;
+}

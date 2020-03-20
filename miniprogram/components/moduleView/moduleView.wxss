@@ -1,0 +1,59 @@
+/* miniprogram/components/moduleView/moduleView.wxss */
+.module-view {
+  padding: 24rpx 0;
+}
+.top {
+  margin: 0 24rpx 24rpx;
+  font-size: 24rpx;
+  position: relative;
+  color: #494949;
+}
+.top text:first-child {
+  font-weight: bold;
+}
+.more.navigator-hover {
+  background: transparent;
+  opacity: 1;
+}
+.more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #00cd1c;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: 24rpx;
+}
+.view-item {
+  width: 25%;
+  height: auto;
+  text-align: center;
+  padding-right: 30rpx;
+}
+.img image {
+  width: 160rpx;
+  height: 210rpx;
+  border-radius: 8rpx;
+}
+.detail {
+  font-size: 20rpx;
+  text-align: left;
+}
+.detail-title {
+  font-size: 24rpx;
+  font-weight: blod;
+  color: #191919;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.score-wrapper {
+  color: #ffaa00;
+}
+.score {
+  margin-left: 6rpx;
+  color: #8d8d8d;
+}

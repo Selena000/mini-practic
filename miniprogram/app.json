@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/top/top",
     "pages/me/me",
+    "pages/top/top",
+    "pages/index/index",
+    "pages/detailIndex/detailIndex",
     "components/searchbar/searchbar",
     "components/mysearchbar/mysearchbar"
   ],

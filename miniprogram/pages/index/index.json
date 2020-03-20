@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "searchbar": "../../components/mysearchbar/mysearchbar"
+    "searchbar": "../../components/mysearchbar/mysearchbar",
+    "module-view": "../../components/moduleView/moduleView"
   }
 }

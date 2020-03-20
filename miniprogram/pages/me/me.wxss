@@ -1,1 +1,15 @@
 /* miniprogram/pages/me/me.wxss */
+page {
+  background: #feffff;
+}
+.login {
+  background: #00d06f;
+  height: 450rpx;
+  display: flex;
+  align-items: center;
+}
+.login-btn {
+  background: white;
+  color: #004f23;
+  border-radius: 40rpx;
+}

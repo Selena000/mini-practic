@@ -1,2 +1,17 @@
 <!--miniprogram/pages/top/top.wxml-->
-<text>miniprogram/pages/top/top.wxml</text>
+
+<view class="top">
+  <scroll-view scroll-y>
+    <view class="top-list">
+      <view wx:for="{{topCollection}}" wx:key="id" class="top-item">
+        <image src="{{item.cover_url}}" />
+        <view class="text">
+          <text>1.{{item.items[0].title}}  <text class="score">{{item.items[0].rating.value}}分</text>
+            2.{{item.items[1].title}}  <text class="score">{{item.items[1].rating.value}}分</text>
+            3.{{item.items[2].title}}  <text class="score">{{item.items[2].rating.value}}分</text>
+          </text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

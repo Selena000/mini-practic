@@ -1,1 +1,29 @@
 /* miniprogram/pages/top/top.wxss */
+page {
+  background: #feffff;
+}
+
+.top-list {
+  margin: 30rpx;
+}
+.top-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 8rpx;
+  margin: 50rpx 0;
+  height: 156rpx;
+}
+.top-item image {
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 30rpx;
+  border-radius: 14rpx;
+}
+.text {
+  font-size: 24rpx;
+  color: #4d4d4d;
+}
+.score {
+  color: #ffaa00;
+}

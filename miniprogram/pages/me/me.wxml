@@ -1,2 +1,6 @@
 <!--miniprogram/pages/me/me.wxml-->
-<text>miniprogram/pages/me/me.wxml</text>
+<view class="me">
+  <view class="login">
+    <button class="login-btn">登录</button>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<!--miniprogram/components/moduleView/moduleView.wxml-->
+<view class="module-view">
+  <view class="top">
+    <text class="title">{{title}}</text>
+    <navigator 
+      class="more" 
+      url="../../pages/detailIndex/detailIndex?title={{title}}">
+      查看更多 >
+    </navigator>
+  </view>
+  <scroll-view scroll-x>
+    <view class="list">
+      <view wx:for="{{list}}" wx:key="title" class="view-item">
+        <view class="img">
+          <image src="{{item.cover}}" />
+        </view>
+        <view class="detail">
+          <view class="detail-title">
+            <text>{{item.title}}</text>
+          </view>
+          <view>
+            <text class="score-wrapper">{{item.score}}</text>
+            <text class="score">{{item.rate}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

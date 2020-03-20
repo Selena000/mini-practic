@@ -7,6 +7,14 @@ Page({
   data: {
     inputShowed: false,
     inputVal: '',
+    viewData: [
+      { title: '影院热播' },
+      { title: '豆瓣热门' },
+      { title: '近期热门剧集' },
+      { title: '近期热门综艺节目' },
+      { title: '畅销图书' },
+      { title: '热门单曲榜' }
+    ]
   },
   showInput() {
     this.setData({
@@ -23,7 +31,35 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    this.getList()
+  },
 
+  getList() {
+    wx.showLoading({
+      title: '加载中'
+    })
+    wx.cloud.callFunction({
+      name: 'movieIndex',
+      data: {
+        type: 'movie',
+		    tag: '热门',
+		    pageSize: 60,
+		    pageNum: 0
+      },
+      success: ({result}) => {
+        // "★★★★★☆☆☆☆☆".slice(5 - Math.round(item.rate), 10 - Math.round(item.rate))
+        this.setData({
+          viewData: this.data.viewData.map((item, index) => {
+            item.list = result.subjects.slice(10 * index, (index + 1) * 10).map(sub => ({
+              ...sub,
+              score:  "★★★★★☆☆☆☆☆".slice(5 - Math.floor(sub.rate/2), 10 - Math.floor(sub.rate/2))
+            }))
+            return item
+          })
+        })
+        wx.hideLoading()
+      }
+    })
   },
 
   /**
