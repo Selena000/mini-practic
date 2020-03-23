@@ -1,0 +1,49 @@
+/* miniprogram/pages/search/search.wxss */
+.search-bar {
+  padding: 8px;
+  background-color: #00c759;
+  position: relative;
+  display: flex;
+}
+.search-bar i {
+  position: absolute;
+  left: 20rpx;
+  top: 26rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.search-bar input {
+  background-color: white;
+  border-radius: 10rpx;
+  padding: 4rpx 40rpx;
+  font-size: 26rpx;
+  color: #020202;
+}
+.result-list {
+  padding: 30rpx;
+}
+.result-item {
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.result-item image {
+  width: 160rpx;
+  height: 210rpx;
+  padding: 6rpx;
+}
+.result-detail {
+  margin-left: 10rpx;
+}
+.result-detail text {
+  color: #909090;
+}
+.result-detail text:first-child{
+  font-size: 30rpx;
+  color: #000;
+}
+.result-detail text:nth-child(2) {
+  font-size: 20rpx;
+}
+.result-detail text:last-child {
+  font-size: 26rpx;
+}

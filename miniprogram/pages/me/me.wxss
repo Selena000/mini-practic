@@ -13,3 +13,49 @@ page {
   color: #004f23;
   border-radius: 40rpx;
 }
+.my-msg {
+  padding: 20rpx;
+  position: relative;
+}
+.my-msg text:first-child {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.my-msg text:last-child {
+  position: absolute;
+  right: 50rpx;
+  color: #8a8a8a;
+  font-size: 26rpx;
+}
+.detail-item {
+  display: flex;
+  padding: 20rpx;
+  align-items: center;
+}
+.detail-item image {
+  width: 50rpx;
+  height: 50rpx;
+  padding: 20rpx;
+  flex: 1;
+}
+.fenxi {
+  font-size: 26rpx;
+  flex: 1;
+}
+.fenxi text:first-child {
+  color: #414141;
+}
+.fenxi text:last-child {
+  color: #818181;
+}
+.start {
+  color: #cecece;
+  font-size: 26rpx;
+  flex: 2;
+  text-align: center;
+}
+.open {
+  color: #8a8a8a;
+  font-size: 26rpx;
+  flex: 1;
+}

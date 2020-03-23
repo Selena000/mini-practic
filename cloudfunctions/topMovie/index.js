@@ -1,24 +1,25 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
 const axios = require('axios')
+const qs = require('qs')
+
 cloud.init()
 
 // let url = 'https://frodo.douban.com/api/v2/movie/rank_list?apiKey=054022eaeae0b00e0fc068c0c0a2102a'
+// let url = encodeURI(`https://frodo.douban.com/api/v2/search?&apiKey=054022eaeae0b00e0fc068c0c0a2102a&q=我`)
+// getTop({
+// 	url 
+// })
 
-// getTop()
-
-async function getTop(url) {
-	let result = await axios.get(url)
-
+async function getTop({url, params = {}}) {
+	let result = await axios.get(url, qs.stringify(params))
+	// console.log(result.data)
 	return result.data
 }
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-  const wxContext = cloud.getWXContext()
-
-  const data = await getTop(event.url)
-
+  const data = await getTop(event)
 
   return {
   	data

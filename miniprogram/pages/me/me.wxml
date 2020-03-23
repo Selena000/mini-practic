@@ -3,4 +3,21 @@
   <view class="login">
     <button class="login-btn">登录</button>
   </view>
+  <view class="my-msg">
+    <text>我的书影音</text>
+    <text>登录查看 ></text>
+  </view>
+  <view class="detail">
+    <view class="detail-item" wx:for="{{detailMsg}}">
+      <view>
+        <image src="{{item.image}}"/>
+      </view>
+      <view class="fenxi">
+        <text>{{item.text}}\n</text>
+        <text>{{item.count}} 看过</text>
+      </view>
+      <text class="start">{{item.markText}}</text>
+      <text class="open">立即开启 ></text>
+    </view>
+  </view>
 </view>

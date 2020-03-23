@@ -1,0 +1,19 @@
+<!--miniprogram/pages/search/search.wxml-->
+<view>
+  <view class="search-bar">
+    <i class="weui-icon-search"></i>
+    <input class="weui-input" auto-focus bindinput="bindSearchInput" placeholder="搜索"/>
+  </view>
+  <view class="result-list">
+    <view class="result-item" wx:for="{{resultList}}" wx:key="id">
+      <view>
+        <image src="{{item.pic.normal}}"/>
+      </view>
+      <view class="result-detail">
+        <text>{{item.title}}\n</text>
+        <text>{{item.null_rating_reason || item.rating.value +  '分'}}\n</text>
+        <text>{{item.card_subtitle}}</text>
+      </view>
+    </view>
+  </view>
+</view>

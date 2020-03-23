@@ -7,7 +7,9 @@ Page({
   data: {
 
   },
-  handleClick() {
-    
+  handleClick(e) {
+    wx.navigateTo({
+      url: '../../pages/search/search'
+    })
   }
 })

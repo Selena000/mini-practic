@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/search/search",
     "pages/me/me",
     "pages/top/top",
-    "pages/index/index",
     "pages/detailIndex/detailIndex",
     "components/searchbar/searchbar",
     "components/mysearchbar/mysearchbar"
@@ -33,7 +34,7 @@
     "backgroundColor": "#feffff",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#00c759",
-    "navigationBarTitleText": "微信小程序开发案例",
+    "navigationBarTitleText": "观影",
     "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
