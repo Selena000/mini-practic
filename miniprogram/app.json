@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/analysisMovie/anlysisMovie",
+    "pages/me/me",
     "pages/index/index",
     "pages/search/search",
-    "pages/me/me",
     "pages/top/top",
     "pages/detailIndex/detailIndex",
     "components/searchbar/searchbar",

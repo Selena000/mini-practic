@@ -6,7 +6,7 @@ const qs = require('qs')
 cloud.init()
 
 // let url = 'https://frodo.douban.com/api/v2/movie/rank_list?apiKey=054022eaeae0b00e0fc068c0c0a2102a'
-// let url = encodeURI(`https://frodo.douban.com/api/v2/search?&apiKey=054022eaeae0b00e0fc068c0c0a2102a&q=我`)
+// let url = encodeURI(`https://frodo.douban.com/api/v2/noviciate/mark_recommendations?start=0&apiKey=054022eaeae0b00e0fc068c0c0a2102a`)
 // getTop({
 // 	url 
 // })

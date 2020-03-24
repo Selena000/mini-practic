@@ -1,0 +1,20 @@
+<!--miniprogram/pages/analysisMovie/anlysisMovie.wxml-->
+<view>
+  <view class="remove-icon">
+    <text>remove-icon</text>
+  </view>
+  <view class="movie-detail">
+    <view class="detail">
+      <image src=""/>
+      <text>8.3</text>
+      <text>2019 / 韩国 / 喜剧 / 120分钟</text>
+    </view>
+    <view class="operate">
+      <button>反悔</button>
+      <button>看过</button>
+    </view>
+  </view>
+  <view class="summary">
+    <text>Lv 1.0 小鬼当家</text>
+  </view>
+</view>

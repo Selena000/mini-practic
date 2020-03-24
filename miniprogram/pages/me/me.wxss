@@ -7,12 +7,39 @@ page {
   height: 450rpx;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.login-msg {
+  text-align: center;
+  width: 100%;
+}
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 150rpx;
+  border: 6rpx solid white;
+}
+.nick-name {
+  color: white;
+  font-weight: bold;
 }
 .login-btn {
   background: white;
   color: #004f23;
   border-radius: 40rpx;
 }
+.logout {
+  position: absolute;
+  right: 50rpx;
+  bottom: 50rpx;
+  color: white;
+  font-size: 24rpx;
+  padding: 2rpx 15rpx;
+  border-radius: 4rpx;
+  border: 1px solid white;
+  background-color: #00db74;
+}
+
 .my-msg {
   padding: 20rpx;
   position: relative;

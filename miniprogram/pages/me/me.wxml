@@ -1,14 +1,25 @@
 <!--miniprogram/pages/me/me.wxml-->
 <view class="me">
   <view class="login">
-    <button class="login-btn">登录</button>
+
+    <view class="login-msg" wx:if="{{userInfo.openid}}">
+      <image class="avatar" src="{{userInfo.avatarUrl}}"/>
+      <text class="nick-name">\n{{userInfo.nickName}}</text>
+      <view class="logout" bindtap="logout" size="mini">退出</view>
+    </view>
+
+    <button 
+      wx:else
+      open-type="getUserInfo" 
+      bindgetuserinfo="getUserInfo" 
+      class="login-btn">登录</button>
   </view>
   <view class="my-msg">
     <text>我的书影音</text>
-    <text>登录查看 ></text>
+    <text wx:if="{{userInfo.openid}}">登录查看 ></text>
   </view>
   <view class="detail">
-    <view class="detail-item" wx:for="{{detailMsg}}">
+    <view class="detail-item" wx:for="{{detailMsg}}" wx:key="id">
       <view>
         <image src="{{item.image}}"/>
       </view>
