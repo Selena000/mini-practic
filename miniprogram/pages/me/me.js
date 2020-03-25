@@ -84,5 +84,11 @@ Page({
     this.setData({
       userInfo: {}
     })
+  },
+  
+  goDetail() {
+    wx.navigateTo({
+      url: '../../pages/analysisMovie/analysisMovie',
+    })
   }
 })

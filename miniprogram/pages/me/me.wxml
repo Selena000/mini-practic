@@ -28,7 +28,7 @@
         <text>{{item.count}} 看过</text>
       </view>
       <text class="start">{{item.markText}}</text>
-      <text class="open">立即开启 ></text>
+      <text class="open" bindtap="goDetail">立即开启 ></text>
     </view>
   </view>
 </view>

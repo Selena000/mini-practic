@@ -1,0 +1,124 @@
+/* miniprogram/pages/analysisMovie/anlysisMovie.wxss */
+.remove-icon {
+  background-color: #7b8076;
+  height: 200rpx;
+  text-align: center;
+  width: 100%;
+}
+.icon-wrap {
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  left: 30rpx;
+  background: white;
+  border-radius: 0 0 40rpx 40rpx / 0 0 40rpx 40rpx;
+}
+.icon-wrap image {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 10rpx;
+}
+.remove-bg {
+  width: 120rpx;
+  height: 30rpx;
+  margin-bottom: 30rpx;
+  position: relative;
+  left: calc(50% - 60rpx);
+  background-color: white;
+}
+.icon-wrap::before {
+  position: absolute;
+  content: '';
+  width: 30rpx;
+  height: 30rpx;
+  background-color: #7b8076;
+  left: -30rpx;
+  border-radius: 0 30rpx 0 0;
+}
+.icon-wrap::after {
+  position: absolute;
+  content: '';
+  width: 30rpx;
+  height: 30rpx;
+  background-color: #7b8076;
+  right: -30rpx;
+  border-radius: 30rpx 0 0 0;
+}
+
+.tips {
+  font-size: 22rpx;
+  color: white;
+}
+/* .drag-img {
+  width: 330rpx;
+  height: 440rpx;
+  border-radius: 14rpx;
+  box-shadow: 0 0 40rpx #949494;
+} */
+.drag {
+  height: 600rpx;
+  background-color: #7b8076;
+  text-align: center;
+  margin-bottom: 140rpx;
+}
+.img-list {
+  position: relative;
+  width: 340rpx;
+  height: 500rpx;
+  left: calc(50% - 170rpx);
+}
+.img-list image {
+  height: 460rpx;
+  border-radius: 14rpx;
+  box-shadow: 0 0 40rpx #949494;
+  position: absolute;
+}
+.img-list image:nth-of-type(1) {
+  width: 280rpx;
+  left: 30rpx;
+  top: 0;
+}
+.img-list image:nth-of-type(2) {
+  width: 310rpx;
+  left: 15rpx;
+  top: 30rpx;
+}
+.img-list .move image {
+  width: 340rpx;
+  left: 0;
+}
+.move {
+  width: 340rpx;
+  text-align: center;
+  position: relative;
+  top: 60rpx;
+}
+.move .btn {
+  color:white;
+  z-index: 2;
+  border: 4rpx solid #ffcd00;
+  border-radius: 60rpx;
+  /* width: 230rpx; */
+  opacity: .6;
+  font-size: 26rpx;
+}
+
+.detail {
+  text-align: center;
+}
+.detail text:first-child {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.detail text:nth-child(2) {
+  color: #ffcd00;
+  font-size: 20rpx;
+}
+.detail text:last-child {
+  color: #818181;
+  font-size: 26rpx;
+}
+.operate {
+  text-align: center;
+}

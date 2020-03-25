@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/analysisMovie/anlysisMovie",
     "pages/me/me",
     "pages/index/index",
+    
     "pages/search/search",
     "pages/top/top",
     "pages/detailIndex/detailIndex",
     "components/searchbar/searchbar",
-    "components/mysearchbar/mysearchbar"
+    "components/mysearchbar/mysearchbar",
+    "pages/analysisMovie/analysisMovie"
   ],
   "tabBar": {
     "list": [

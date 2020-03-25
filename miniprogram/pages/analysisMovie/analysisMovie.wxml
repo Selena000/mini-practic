@@ -1,0 +1,60 @@
+<!--miniprogram/pages/analysisMovie/anlysisMovie.wxml-->
+<movable-area style="height: 100%; width: 100%;">
+<view class="anlysis">
+    <view class="drag">
+      <view class="remove-icon">
+        <view class="remove-bg">
+          <view class="icon-wrap">
+            <image src="../../images/img/trash.png"/>
+          </view>
+        </view>
+        <text class="tips">没看过，上滑消掉</text>
+      </view>
+      <view class="center">
+        <view class="img-list">
+          <image src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2561439800.jpg"/>
+          <image src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2570615901.jpg"/>
+          <view class="move" touchmove="touchmove">
+            <view class="drag-view">
+              <!-- <button size="mini" class="btn">没看过</button> -->
+              <image class="drag-img" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2575974437.jpg"/>
+            </view>
+          </view>
+          <!-- <movable-view 
+            bindchange="moveChange" 
+            vtouchmove="vtouchmove" 
+            htouchmove="htouchmove" 
+            touchend="touchend"
+            x="{{x}}" 
+            y="{{y}}" 
+            class="move"
+            direction="vertical" 
+            animation 
+            out-of-bounds
+            >
+            <view class="drag-view">
+              <button size="mini" class="btn">没看过</button>
+              <image class="drag-img" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2575974437.jpg"/>
+            </view>
+          </movable-view> -->
+        </view>
+      </view>
+      
+    </view>
+  
+  <view class="movie-detail">
+    <view class="detail">
+      <text>老爸102岁\n</text>
+      <text>★★★★☆  8.3\n</text>
+      <text>2019 / 韩国 / 喜剧 / 120分钟</text>
+    </view>
+    <!-- <view class="operate">
+      <button size="mini">反悔</button>
+      <button size="mini">看过</button>
+    </view> -->
+  </view>
+  <!-- <view class="summary">
+    <text>Lv 1.0 小鬼当家</text>
+  </view> -->
+</view>
+</movable-area>
